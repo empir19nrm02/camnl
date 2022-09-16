@@ -1,0 +1,8 @@
+*.pyc
+scripts/plots
+scripts/Plots*
+doc_alt
+backup
+*.egg-info
+doc/build
+scripts/.pylint.d
