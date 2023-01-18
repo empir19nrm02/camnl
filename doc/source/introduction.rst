@@ -18,12 +18,9 @@ amplification of analogue signals and AD-conversion.
 
 .. _pixel_equiv_circ:
 .. figure:: images//equiv-circuit-diagram.png
-    :scale: 100 %
     :alt: equivalent circuit diagram of a sensor
 
     Equivalent circuit diagram of a sensor
-
-.. todo:: rename I_cap to  I_p in image
 
 Sources of Non-Linearity
 ------------------------

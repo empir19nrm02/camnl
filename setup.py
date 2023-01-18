@@ -3,14 +3,14 @@ import setuptools as st
 import glob
 
 def readme():
-    with open('README.rst') as f:
+    with open('README.md') as f:
         return f.read()
 
 st.setup(name='camnl',
       version='0.1',
       description='Calibration of camera nonlinearity',
       long_description = readme(),
-      long_description_content_type="text/x-rst",
+      long_description_content_type="text/x-md",
       url='',
       author='Christian Schrader',
       author_email='christian.schrader@ptb.de',
@@ -24,7 +24,7 @@ st.setup(name='camnl',
       packages=st.find_packages(),
       #scripts=['bin/bla'],
       include_package_data=True, # copy docs etc.
-      zip_safe=False,
+      sip_safe=False,
       test_suite='nose.collector',
       tests_require=['nose'],
       install_requires=[
