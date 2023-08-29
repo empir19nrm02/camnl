@@ -168,24 +168,35 @@ class NLCalibration:
             assert len(y0) == nr_of_regions
 
         for region_dat in series_dat:  # über alle Serien loopen
-            # first dimension of region_dat.samples are regions,
-            # then inttime, then repetitive measurements
-
-            if region_dat.samples.shape[0] != nr_of_regions:
-                # simple test to detect malformed data
-                # the roi definitions in region_dat.rois should also be
-                # identical (same objects)
-                raise Exception("Number of regions changed!")
 
             # -----------------------
+            assert (region_dat.samples is None) != (region_dat.avgdat is None), \
+                "Only samples or averaged input allowed!"
+            if region_dat.samples is not None:
+                # first dimension of region_dat.samples are regions,
+                # then inttime, then repetitive measurements
 
-            print("Calculate mean and overload ratio...")
-            # averaging over all data should be faster than
-            # partial averaging inside the loop
+                if region_dat.samples.shape[0] != nr_of_regions:
+                    # simple test to detect malformed data
+                    # the roi definitions in region_dat.rois should also be
+                    # identical (same objects)
+                    raise Exception("Number of regions changed!")
 
-            # average over repetitive samples in last dimension
-            m_r = region_dat.samples.mean(axis=-1)
-            overload_r = np.sum(region_dat.samples == self.max_sensor_value, axis=-1)
+                print("Calculate mean and overload ratio...")
+                # averaging over all data should be faster than
+                # partial averaging inside the loop
+
+                # average over repetitive samples in last dimension
+                m_r = region_dat.samples.mean(axis=-1)
+                overload_r = np.sum(region_dat.samples == self.max_sensor_value, axis=-1)
+            else:
+                m_r = region_dat.avgdat.mean
+                overload_r = region_dat.avgdat.ovrld
+                # FiXME: next steps whith use of averaged data not implemented!
+                # filtering by limits needs to be done on averaged values instead
+                # of samples
+
+            # variance currently unused
             inttimes = region_dat.inttimes
 
             # if self.mode == 'pixel':

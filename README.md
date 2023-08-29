@@ -1,11 +1,11 @@
-Nonlinearity Calibration for Charge Accumulating devices
+Nonlinearity Calibration for Charge Accumulating Devices
 --------------------------------------------------------
 
 Python code for determination of non-linearity of charge accumulating devices
 (e.g. CCD/CMOS cameras and array spectrometers).
 
 
-To build documentation with Sphinx, run `make html` in doc-directory.
+To build documentation with Sphinx, run `make html` in doc-directory in a python-shell.
 
 --------------
 

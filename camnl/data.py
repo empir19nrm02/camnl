@@ -308,12 +308,19 @@ class ImportNLCalibData_Base:
 # ------------------------- Storage Classes ----------------------------------
 
 # pylint: disable=R0903
+
+class NLInputAVGData(object):
+    mean = None
+    var = None
+    ovrld = None
+    n = None
+
 class NLInputData(object):
     series_name = ""
     inttimes = None  # e.g. (100,)
     rois = None
     samples = None  # e.g. (100, 240816, 60)
-
+    avgdat = None
 
 class NLSelectedData(object):
     samples = None

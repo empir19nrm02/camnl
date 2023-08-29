@@ -473,12 +473,17 @@ class NLPlot():
     def plot_sigproc_nl(
         self,
         nldat,
+        #
         plot_data=False,
-        plot_nl=False,
-        use_it_colors=None,
+        plot_data_param={},
         data_color="gray",
+        #
+        plot_nl=False,
+        plot_nl_param={},
         nl_color="black",
         nl_label=None,
+        #
+        use_it_colors=None,
         it_corr=None,
         fig=None,
         title=None,
@@ -488,6 +493,13 @@ class NLPlot():
         pickradius=0,
         filename="",
     ):
+
+        # default plotting styles
+        if len(plot_data_param) == 0:
+            plot_data_param = {'ls': 'none', 'marker': '.'}
+        if len(plot_nl_param) == 0:
+            plot_nl_param = {'ls': '-', 'lw': 2}
+
         try:
             figsize = self.figsize
             if fig is None:
@@ -564,17 +576,19 @@ class NLPlot():
                             label=label,
                         )
                     else:
-                        # AAAAAAAAAAAAARGH, use_ti_colors funktioniert nicht so einfach mit line plots!
-                        # erstmal linienplot drin lassen, damit man Infohandler für verschiedene Artists implementieren kann
+                        # AAAAAAAAAAAAARGH, use_ti_colors does not work with line plots!
+                        # lineplot still kept, implement Infohandler for different Artists
+                        print(plot_data_param)
                         ax.plot(
                             x_,
                             y_scaled,
-                            ".-",
+                            #".-",  # fmt moved to plot_data_param
                             c=data_color,
                             zorder=1,
                             picker=use_picker,
                             pickradius=pickradius,
                             label=label,
+                            **plot_data_param
                         )
 
             # end for
@@ -587,12 +601,13 @@ class NLPlot():
                 ax.plot(
                     X_a,
                     nldat.nl_fun(X_a),
-                    "-",
-                    lw=2,
+                    # "-",
+                    # lw=2,
                     c=nl_color,
                     zorder=5,
                     alpha=1,
                     label=nl_label,
+                    **plot_nl_param,
                 )
 
             if len(nldat.outlier_limits[0]) > 0:

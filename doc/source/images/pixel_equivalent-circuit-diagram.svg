@@ -5,9 +5,9 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="pixel_equivalent-circuit-diagram.svg"
-   inkscape:export-filename="equiv-circuit-diagram.png"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="pixel_equivalent-circuit-diagram3.svg"
+   inkscape:export-filename="equiv-circuit-diagram3.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -258,9 +258,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="362.39222"
-     inkscape:cy="161.92745"
+     inkscape:zoom="5.6568544"
+     inkscape:cx="279.66072"
+     inkscape:cy="180.93094"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -285,7 +285,13 @@
      inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
-       id="grid815" />
+       id="grid815"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="mm"
+       visible="true" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -309,6 +315,18 @@
        height="55.5625"
        x="13.375896"
        y="22.489584" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:7.29068;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="68.716393"
+       y="52.33651"
+       id="text6148-6-3-4"
+       transform="translate(3.7081364)"><tspan
+         x="68.716393"
+         y="52.33651"
+         id="tspan5">,Q<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan4">p</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -622,7 +640,7 @@
          y="41.677082"
          style="stroke-width:0.264583">j<tspan
    style="font-size:65%;baseline-shift:sub"
-   id="tspan642">photonic</tspan></tspan></text>
+   id="tspan642">photo</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -656,17 +674,15 @@
    id="tspan772-7">pixel</tspan></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:7.29068;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="68.716393"
        y="52.33651"
        id="text6148-6-3"><tspan
-         sodipodi:role="line"
-         id="tspan6146-4-2"
          x="68.716393"
          y="52.33651"
-         style="stroke-width:0.264583">V<tspan
+         id="tspan7">V<tspan
    style="font-size:65%;baseline-shift:sub"
-   id="tspan772-7-1">p</tspan></tspan></text>
+   id="tspan6">p</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"

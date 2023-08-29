@@ -27,7 +27,7 @@ Sources of Non-Linearity
 
 Three main sources of non-linearity could be identified:
 
-1. **Generation of charges:** The photonic current $i_{\mathrm{phot}}$ can
+1. **Generation of charges:** The photonic current $i_{\mathrm{photo}}$ can
    depend not only on the intensity of the incoming light but also on the
    combination of wavelength and the amount of accumulated charges.
 
@@ -50,7 +50,7 @@ Three main sources of non-linearity could be identified:
 Generation of charges - Spectral dependency 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The photonic current $i_{\mathrm{phot}}$ can depend not only on the intensity of
+The photonic current $i_{\mathrm{photo}}$ can depend not only on the intensity of
 the incoming light but also on the combination of wavelength and the amount of
 accumulated charges. Light with short wavelength has only a small penetration
 depth into the silicon but longer wavelenths lead to larger penetration depth. 

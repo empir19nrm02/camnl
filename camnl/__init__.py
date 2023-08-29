@@ -8,6 +8,7 @@ __version__ = "0.1"
 # __all__ = []
 
 from .nlcalib import Polynom, NLCalibration
-from .data import NLInputData, NLSelectedData, NLResultData, ImageRoi, PDNL_Correction
+from .data import NLInputData, NLInputAVGData
+from .data import NLSelectedData, NLResultData, ImageRoi, PDNL_Correction
 from .data import ImportNLCalibData_Base
 
